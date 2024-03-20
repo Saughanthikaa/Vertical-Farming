@@ -119,7 +119,7 @@ const FirebaseData = ({handleHumiditydata , handleTemperatureData}) => {
     }
     
 
-    if(tempval < 51 && !setTemphasApiBeenCalled) {
+    if(tempval > 50 && !temphasApiBeenCalled) {
     fun()
     }
   },[tempval, temphasApiBeenCalled])
